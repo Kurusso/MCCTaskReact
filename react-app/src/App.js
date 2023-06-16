@@ -40,10 +40,10 @@ function App() {
       </div>
     </div>
       <div className=" button-container margintop d-flex justify-content-center align-items-center">
-        <Button  variant="primary" onClick={addElem}>Add</Button>
-        <Button variant="danger" onClick={deleteElem}>Remove</Button>
-        <Button variant="info" onClick={editName}>Rename</Button>
-        <Button variant="warning" onClick={reset}>Reset</Button>
+        <Button className='margin-sides'  variant="primary" onClick={addElem}>Add</Button>
+        <Button className='margin-sides' variant="danger" onClick={deleteElem}>Remove</Button>
+        <Button className='margin-sides' variant="info" onClick={editName}>Rename</Button>
+        <Button className='margin-sides' variant="warning" onClick={reset}>Reset</Button>
       </div>
       <div className=" margintop d-flex justify-content-center align-items-center">
       {state.condition && (
