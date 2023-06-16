@@ -21,6 +21,7 @@
 .scrollable-container {
   height: 500px;
   width: 800px;
+  min-width: 200px;
   overflow-y: auto;
   overflow-x: auto;
   border: #282c34;
