@@ -23,7 +23,7 @@ const mainReducer = (state=initialState, action) =>{
           newState.nameToChange=action.name
           return newState
         case(ADD_PAGE):
-          action.id===0? newState.tree.push({children:[],name:"New Page",id:crypto.randomUUID()}): findAndAddElement(newState.tree, action.id)
+          action.id===0? newState.tree.push({children:[],name:"New Node",id:crypto.randomUUID()}): findAndAddElement(newState.tree, action.id)
           return newState
         case(DELETE_PAGE):
           if (action.id!==0) { findAndRemoveElement(newState.tree, action.id)}

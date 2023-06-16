@@ -2,7 +2,7 @@ export function findAndAddElement(tree, targetId) {
 
     for (let i = 0; i < tree.length; i++) {
       if (tree[i].id === targetId) {
-        tree[i].children.push({children:[],name:"New Page",id:crypto.randomUUID()})
+        tree[i].children.push({children:[],name:"New Node",id:crypto.randomUUID()})
         return true; 
       }
       if (tree[i].children && tree[i].children.length > 0) {

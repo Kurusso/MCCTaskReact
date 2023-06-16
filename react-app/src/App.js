@@ -31,6 +31,7 @@ function App() {
   }
   return (
     <div className="App ">
+      <h5 className='margintop d-flex justify-content-center align-items-center'>Tree</h5>
       <div className='margintop d-flex justify-content-center align-items-center'>
         <div className='scrollable-container padding5'>
         {state.tree != null && state.tree.map((value) => (
@@ -38,13 +39,13 @@ function App() {
         ))}
       </div>
     </div>
-      <div className="margintop d-flex justify-content-center align-items-center">
+      <div className=" button-container margintop d-flex justify-content-center align-items-center">
         <Button  variant="primary" onClick={addElem}>Add</Button>
         <Button variant="danger" onClick={deleteElem}>Remove</Button>
         <Button variant="info" onClick={editName}>Rename</Button>
         <Button variant="warning" onClick={reset}>Reset</Button>
       </div>
-      <div className="margintop d-flex justify-content-center align-items-center">
+      <div className=" margintop d-flex justify-content-center align-items-center">
       {state.condition && (
           <InputGroup  style={{width:'285px'}} className="mb-3">
             <FormControl
