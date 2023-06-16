@@ -6,6 +6,7 @@ import { addElemActionCreator, deleteElemActionCreator, chooseNodeActionCreator,
 
 function App() {
   const state = useSelector(state=>state.mainPage)
+  document.title = "Nodes"
   const dispatch = useDispatch()
   const addElem = () =>{
     dispatch(addElemActionCreator(state.chosenPage))

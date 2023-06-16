@@ -4,20 +4,13 @@
 .padding5{
   padding:5px
 }
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 .margin-sides{
   margin: 0 2px 0 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 .scrollable-container {
   height: 500px;
   width: 800px;
@@ -43,11 +36,4 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
