@@ -28,7 +28,7 @@ function TreeNode(props) {
       </Card>
 
       {props.children != null && props.children.map((value) => (
-        <TreeNode children={value.children} id={value.id} name={value.name} />
+        <TreeNode children={value.children} id={value.id} name={value.name} key={value.id}/>
       ))}
     </div>
     )

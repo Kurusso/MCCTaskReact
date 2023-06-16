@@ -35,7 +35,7 @@ function App() {
       <div className='margintop d-flex justify-content-center align-items-center'>
         <div className='scrollable-container padding5'>
         {state.tree != null && state.tree.map((value) => (
-          <TreeNode children={value.children} id={value.id} name={value.name} />
+          <TreeNode children={value.children} id={value.id} name={value.name}  key={value.id}/>
         ))}
       </div>
     </div>
