@@ -1,7 +1,9 @@
-.App {
-  text-align: center;
+.margintop {
+  margin-top: 5px;
 }
-
+.padding5{
+  padding:5px
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,7 +14,15 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.scrollable-container {
+  height: 500px;
+  width: 800px;
+  overflow-y: auto;
+  overflow-x: auto;
+  border: #282c34;
+  border-width: 1px;
+  border-style: solid;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
